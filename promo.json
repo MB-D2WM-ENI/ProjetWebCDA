@@ -1,0 +1,88 @@
+{
+  "promo":[
+    {
+      "nom":"ECDA2509",
+      "debut":"15/10/2025",
+      "fin":"03/07/2026",
+      "description":"Les objectifs de la formation de Concepteur.rice Développeur.euse d'Applications sont de : Prendre en charge les études fonctionnelles et techniques ; Spécifier et concevoir techniquement une application informatique de type client/serveur (n-tiers ou mobile) ; Programmer une application informatique ; Participer à la gestion de projet informatique. ",
+      "liens": [
+        {
+          "nom": "MDN - HTML",
+          "lien": "https://developer.mozilla.org/fr/docs/Web/HTML",
+          "image": "html.png"
+        },
+        {
+          "nom": "MDN - CSS",
+          "lien": "https://developer.mozilla.org/fr/docs/Web/CSS",
+          "image": "css.png"
+        },
+        {
+          "nom": "TailWindCSS",
+          "lien": "https://tailwindcss.com/docs/installation/using-vite",
+          "image": "tailwindcss.svg"
+        },
+        {
+          "nom" : "daisyUI",
+          "lien": "https://daisyui.com/docs/cdn/",
+          "image": "daisyui.svg"
+        },
+        {
+          "nom": "Javascript.info",
+          "lien": "https://fr.javascript.info/intro",
+          "image": "jsinfo.svg"
+        }
+      ],
+      "nbApprenants":"04",
+      "apprenants":[
+        {
+          "id":1,
+          "nom":"Bocaux",
+          "prenom":"Mélanie",
+          "ville":"Cannes",
+          "avatar":"avatar.png",
+          "anecdotes":"J'aime manger des nouilles au kimchi et regarder des séries coréennes.",
+          "coordonnees":{
+            "latitude":"43.549999",
+            "longitude":"7.01667"
+          }
+        },
+        {
+          "id":2,
+          "nom":"Havette",
+          "prenom":"Aude",
+          "ville":"Nantes",
+          "avatar":"",
+          "anecdotes":"Pas d'anecdotes",
+          "coordonnees":{
+            "latitude":"47.2258527",
+            "longitude":"-1.6178441"
+          }
+        },
+        {
+          "id":3,
+          "nom":"Tanneau",
+          "prenom":"Thomas",
+          "ville":"Rennes",
+          "avatar":"",
+          "anecdotes":"Pas d'anecdotes",
+          "coordonnees":{
+            "latitude":"48.0389236",
+            "longitude":"-1.6923804"
+          }
+        },
+        {
+          "id":4,
+          "nom":"Dubreuil",
+          "prenom":"Marie-Louise",
+          "ville":"Toulouse",
+          "avatar":"",
+          "anecdotes":"Pas d'anecdotes",
+          "coordonnees":{
+            "latitude":"43.5110994548",
+            "longitude":"1.09928047275"
+          }
+        }
+      ]
+    }
+  ]
+}

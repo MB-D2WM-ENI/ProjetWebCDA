@@ -1,0 +1,64 @@
+/* ===== Index ===== */
+
+
+/* ===== Preferences ===== */
+#divAlert {
+    animation-name: anim;
+    animation-duration: 6.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+@keyframes anim {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+/* ===== Carte ===== */
+#map {
+    margin: 50px auto;
+    height: 60vh;
+    width: 85vw;
+}
+
+img.markersColor {
+    filter: hue-rotate(180deg);
+}
+
+img.pointerPinColor {
+    filter: hue-rotate(320deg);
+}
+
+/* ===== Informations ===== */
+img[alt="Javascript.info"] {
+    width: 70px;
+    height: auto;
+}
+
+#ulDescription {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+#ulDescription li {
+    position: relative;
+    padding-left: 45px;
+    margin-top: 10px;
+}
+
+#ulDescription li::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 1rem;
+    top: 0.3rem;
+    width: 16px;
+    height: 16px;
+    background-image: url("../assets/images/coche.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

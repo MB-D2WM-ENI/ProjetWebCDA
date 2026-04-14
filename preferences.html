@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="retro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préférences</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- CDN of DaisyUI / TailWindCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CDN themes of DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/32b38d1f56.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm flex justify-between">
+                <div class="nav-start me-2">
+                    <a href="index.html" title="Vers la page d\'Accueil">
+                        <img src="assets/images/logo.png" alt="Logo de l\'ENI École" id="logo">
+                    </a>
+                </div>
+                <div class="nav-center">
+                    <h1 class=" text-4xl lg:text-6xl">Promo CDA 2025</h1>
+                </div>
+                <div class="nav-end">
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden" aria-label="burgerButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-15 w-15" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-lg dropdown-content bg-base-100 rounded-box z-1 mt-3 p-2 shadow">
+                            <li><a href="index.html" title="Accueil">Accueil</a></li>
+                            <li><a href="preferences.html" title="Préférences">Préférences</a></li>
+                            <li><a href="carte.html" title="Carte">Carte</a></li>
+                            <li><a href="informations.html" title="Informations">Informations</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-end hidden lg:flex">
+                    <ul class="menu menu-lg menu-horizontal px-1">
+                        <li><a href="index.html" title="Accueil">Accueil</a></li>
+                        <li><a href="preferences.html" title="Préférences">Préférences</a></li>
+                        <li><a href="carte.html" title="Carte">Carte</a></li>
+                        <li><a href="informations.html" title="Informations">Informations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-8 relative">
+        <section class="mt-20">
+            <h2 class="flex justify-center text-4xl">Préférences du site</h2>
+            <form class="bg-base-200 border-base-300 rounded-box border sm:w-[500px] mt-35 mx-auto p-5" id="form">
+                <div class="flex justify-between items-center">
+                    <label for="themes">Thème du site</label>
+                    <select name="themes" id="themes" class="select w-24 hover:cursor-pointer">
+                        <option value="light" id="light" selected>Clair</option>
+                        <option value="dark" id="dark">Sombre</option>
+                    </select>
+                </div>
+                <div class="flex justify-between items-center mt-8">
+                    <p>Format d'affichage (liste des apprenants)</p>
+                    <div class="flex flex-col">
+                        <div class="flex justify-start items-center">
+                            <input type="radio" name="display" id="list" class="radio radio-xs me-2" checked>
+                            <label for="list">Liste</label>
+                        </div>
+                        <div class="flex justify-start items-center">
+                            <input type="radio" name="display" id="cards" class="radio radio-xs me-2">
+                            <label for="cards">Cartes</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-20">
+                    <a href="index.html" class="btn btn-sm md:btn-md btn-neutral me-5 transition duration-300 ease-in hover:scale-110">Retour vers la page d'Accueil</a>
+                    <button type="button" class="btn btn-sm md:btn-md btn-soft btn-success ms-5 transition duration-300 ease-in hover:scale-110" id="savePref">Enregistrer</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="scripts/preferences.js"></script>
+</body>
+</html>
